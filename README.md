@@ -11,7 +11,7 @@ Web service that allows registred users
 
 #### Registering a new user
 
-```http
+```
   POST /api/register
 ```
 Request body
@@ -24,7 +24,7 @@ Request body
 
 #### Adding new recipe
 
-```http
+```
   GET /api/recipe/new
 ```
 Request body
@@ -41,7 +41,7 @@ Request body
 
 #### Get repice
 
-```http
+```
   GET /api/recipe/{id}
 ```
 
@@ -53,7 +53,7 @@ Returns recipe with specified id.
 
 #### Search recipes by category or name
 
-```http
+```
   GET /api/recipe/search
 ```
 | Parameter | Type      | Description                                           |
@@ -65,7 +65,7 @@ Returns recipe with specified category or name.
 
 #### Delete recipe
 
-```http
+```
   DELETE /api/recipe/{id}
 ```
 | Parameter | Type     | Description                         |
@@ -76,7 +76,7 @@ Deletes recipe with specified id.
 
 #### Search recipes by category or name
 
-```http
+```
   PUT /api/recipe/{id}
 ```
 | Parameter | Type     | Description                          |
