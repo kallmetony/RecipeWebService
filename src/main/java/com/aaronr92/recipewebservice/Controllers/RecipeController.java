@@ -27,7 +27,8 @@ public class RecipeController {
     //Post mappings
 
     @PostMapping("/new")
-    public ResponseEntity<?> saveRecipe(Authentication auth, @Valid @RequestBody Recipe recipe) {
+    public ResponseEntity<?> saveRecipe(Authentication auth,
+                                        @Valid @RequestBody Recipe recipe) {
         UserDetails userDetails = (UserDetails) auth.getPrincipal();
         recipe.setEmail(userDetails.getUsername());
         Recipe recipeCreate = recipeService.save(recipe);
@@ -61,7 +62,8 @@ public class RecipeController {
     //Delete mappings
 
     @DeleteMapping("/{id}")
-    public void deleteRecipe(@AuthenticationPrincipal UserDetails userDetails, @PathVariable long id) {
+    public void deleteRecipe(@AuthenticationPrincipal UserDetails userDetails,
+                             @PathVariable long id) {
         Optional<Recipe> recipe = Optional.ofNullable(recipeService.findRecipeById(id));
         if (recipe.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);

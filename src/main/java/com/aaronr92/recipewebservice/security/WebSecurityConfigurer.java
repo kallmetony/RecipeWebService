@@ -1,4 +1,4 @@
-package com.aaronr92.recipewebservice;
+package com.aaronr92.recipewebservice.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

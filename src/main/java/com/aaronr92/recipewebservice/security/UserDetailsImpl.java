@@ -1,5 +1,6 @@
 package com.aaronr92.recipewebservice.security;
 
+import com.aaronr92.recipewebservice.entities.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

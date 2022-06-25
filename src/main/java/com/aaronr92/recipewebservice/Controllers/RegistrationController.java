@@ -1,6 +1,6 @@
 package com.aaronr92.recipewebservice.controllers;
 
-import com.aaronr92.recipewebservice.security.User;
+import com.aaronr92.recipewebservice.entities.User;
 import com.aaronr92.recipewebservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

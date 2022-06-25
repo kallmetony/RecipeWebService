@@ -1,5 +1,6 @@
 package com.aaronr92.recipewebservice.security;
 
+import com.aaronr92.recipewebservice.entities.User;
 import com.aaronr92.recipewebservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
