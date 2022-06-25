@@ -1,4 +1,4 @@
-package com.aaronr92.recipewebservice.Auth;
+package com.aaronr92.recipewebservice.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

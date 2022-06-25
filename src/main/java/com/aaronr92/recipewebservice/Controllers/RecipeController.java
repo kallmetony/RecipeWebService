@@ -1,7 +1,7 @@
-package com.aaronr92.recipewebservice.Controllers;
+package com.aaronr92.recipewebservice.controllers;
 
-import com.aaronr92.recipewebservice.Product.Recipe;
-import com.aaronr92.recipewebservice.Services.RecipeService;
+import com.aaronr92.recipewebservice.entities.Recipe;
+import com.aaronr92.recipewebservice.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

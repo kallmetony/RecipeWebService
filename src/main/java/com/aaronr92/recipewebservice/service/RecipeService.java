@@ -1,7 +1,7 @@
-package com.aaronr92.recipewebservice.Services;
+package com.aaronr92.recipewebservice.service;
 
-import com.aaronr92.recipewebservice.Product.Recipe;
-import com.aaronr92.recipewebservice.Repositories.RecipeRepository;
+import com.aaronr92.recipewebservice.entities.Recipe;
+import com.aaronr92.recipewebservice.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

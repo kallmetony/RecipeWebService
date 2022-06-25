@@ -1,4 +1,4 @@
-package com.aaronr92.recipewebservice.Product;
+package com.aaronr92.recipewebservice.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

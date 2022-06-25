@@ -1,6 +1,6 @@
-package com.aaronr92.recipewebservice.Repositories;
+package com.aaronr92.recipewebservice.repository;
 
-import com.aaronr92.recipewebservice.Auth.User;
+import com.aaronr92.recipewebservice.security.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

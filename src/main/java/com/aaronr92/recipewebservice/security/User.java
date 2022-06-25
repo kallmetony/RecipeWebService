@@ -1,4 +1,4 @@
-package com.aaronr92.recipewebservice.Auth;
+package com.aaronr92.recipewebservice.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
