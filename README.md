@@ -82,6 +82,7 @@ Deletes recipe with specified id.
 | Parameter | Type     | Description                          |
 | :-------- | :------- | :--------------------------------    |
 | `id`      | `@Path`  | **Required**. Id of recipe to update |
+  
 Request body
 ```js
 {
