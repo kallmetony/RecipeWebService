@@ -14,7 +14,7 @@ Web service that allows registred users
 ```http
   POST /api/register
 ```
-
+Request body
 ```js
 {
     "email" : "admin@example.com",
@@ -27,6 +27,7 @@ Web service that allows registred users
 ```http
   GET /api/recipe/new
 ```
+Request body
 ```js
 {
     "name" : "Fresh Mint Tea",
@@ -81,7 +82,7 @@ Deletes recipe with specified id.
 | Parameter | Type     | Description                          |
 | :-------- | :------- | :--------------------------------    |
 | `id`      | `@Path`  | **Required**. Id of recipe to update |
-
+Request body
 ```js
 {
     "name": "Warming Ginger Tea",
