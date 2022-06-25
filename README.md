@@ -1,7 +1,7 @@
 
 # Recipe Web Service
 
-Web service that allows registred users
+REST Web service that allows registred users
 
 * Save their recipes
 * Update their recipes
