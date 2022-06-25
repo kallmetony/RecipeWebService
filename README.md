@@ -74,7 +74,7 @@ Returns recipe with specified category or name.
 
 Deletes recipe with specified id.
 
-#### Update recipes by category or name
+#### Update recipe by category or name
 
 ```
   PUT /api/recipe/{id}
