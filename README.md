@@ -12,7 +12,7 @@ REST Web service that allows registred users
 #### Registering a new user
 
 ```
-  POST /api/register
+  POST /api/signup
 ```
 Request body
 ```js
