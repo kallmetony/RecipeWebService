@@ -64,12 +64,12 @@ Returns all recipes
 ```
   GET /api/recipe/search
 ```
-| Parameter  | Type     | Description                                   |
-|:-----------|:---------|:----------------------------------------------|
-| `category` | `string` | **Not required**. Category of recipe to fetch |
-| `name`     | `string` | **Not required**. to fetch                    |
+| Parameter  | Type     | Description                                     |
+|:-----------|:---------|:------------------------------------------------|
+| `category` | `string` | **Not required**. Category of a recipe to fetch |
+| `name`     | `string` | **Not required**. Name of a recipe to fetch     |
 
-Returns recipe with specified category or name.
+Returns a recipe with specified category or name.
 
 #### Delete a recipe
 
