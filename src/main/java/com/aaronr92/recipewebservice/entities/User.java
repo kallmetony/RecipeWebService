@@ -1,6 +1,7 @@
 package com.aaronr92.recipewebservice.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,20 +19,18 @@ import javax.validation.constraints.*;
 public class User {
     @JsonIgnore
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column
     @Email
     @Pattern(regexp = ".+@.+\\..+")
     private String email;
 
-    @Column
     @NotBlank
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Size(min = 8)
     private String password;
 
     @JsonIgnore
-    @Column
     private String role;
 }

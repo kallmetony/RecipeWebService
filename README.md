@@ -1,7 +1,7 @@
 
 # Recipe Web Service
 
-REST Web service that allows registred users
+REST Web service that allows registered users
 
 * Save their recipes
 * Update their recipes
@@ -25,7 +25,7 @@ Request body
 #### Adding new recipe
 
 ```
-  GET /api/recipe/new
+  POST /api/recipe/new
 ```
 Request body
 ```js
@@ -39,27 +39,35 @@ Request body
 }
 ```
 
-#### Get repice
+#### Get recipe
 
 ```
   GET /api/recipe/{id}
 ```
 
-| Parameter | Type     | Description                         |
-| :-------- | :------- | :--------------------------------   |
-| `id`      | `@Path`  | **Required**. Id of recipe to fetch |
+| Parameter | Type    | Description                         |
+|:----------|:--------|:------------------------------------|
+| `id`      | `@Path` | **Required**. Id of recipe to fetch |
 
 Returns recipe with specified id.
+
+#### Get all recipes
+
+```
+  GET /api/recipe/all
+```
+
+Returns all recipes
 
 #### Search recipes by category or name
 
 ```
   GET /api/recipe/search
 ```
-| Parameter | Type      | Description                                           |
-| :-------- | :-------  | :--------------------------------                     |
-| `category`| `string`  | **Not required**. Category of recipe to fetch         |
-| `name`    | `string`  | **Not required**. to fetch                            |
+| Parameter  | Type     | Description                                   |
+|:-----------|:---------|:----------------------------------------------|
+| `category` | `string` | **Not required**. Category of recipe to fetch |
+| `name`     | `string` | **Not required**. to fetch                    |
 
 Returns recipe with specified category or name.
 
@@ -68,9 +76,9 @@ Returns recipe with specified category or name.
 ```
   DELETE /api/recipe/{id}
 ```
-| Parameter | Type     | Description                         |
-| :-------- | :------- | :--------------------------------   |
-| `id`      | `@Path`  | **Required**. Id of recipe to delete |
+| Parameter | Type    | Description                          |
+|:----------|:--------|:-------------------------------------|
+| `id`      | `@Path` | **Required**. Id of recipe to delete |
 
 Deletes recipe with specified id.
 
@@ -79,9 +87,9 @@ Deletes recipe with specified id.
 ```
   PUT /api/recipe/{id}
 ```
-| Parameter | Type     | Description                          |
-| :-------- | :------- | :--------------------------------    |
-| `id`      | `@Path`  | **Required**. Id of recipe to update |
+| Parameter | Type    | Description                          |
+|:----------|:--------|:-------------------------------------|
+| `id`      | `@Path` | **Required**. Id of recipe to update |
   
 Request body
 ```js

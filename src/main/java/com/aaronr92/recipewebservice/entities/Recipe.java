@@ -21,24 +21,21 @@ import javax.validation.constraints.NotEmpty;
 public class Recipe {
     @JsonIgnore
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO,
+            generator="native")
     private long id;
 
     @NotBlank
-    @Column
     private String name;
 
     @NotBlank
-    @Column
     private String category;
 
     @JsonIgnore
-    @Column
     @UpdateTimestamp
     public LocalDateTime date;
 
     @NotBlank
-    @Column
     private String description;
 
     @NotEmpty
@@ -50,16 +47,11 @@ public class Recipe {
     private List<String> directions = new ArrayList<>();
 
     @JsonIgnore
-    @Column(name = "USER_ID", updatable = false)
+    @Column(name = "user_email", updatable = false)
     private String email;
 
     @JsonProperty
     public LocalDateTime getDate() {
         return date;
-    }
-
-    @JsonIgnore
-    public void setDate(LocalDateTime date) {
-        this.date = date;
     }
 }
