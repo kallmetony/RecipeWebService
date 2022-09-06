@@ -9,7 +9,7 @@ REST Web service that allows registered users
 * Search for others recipes
 ## API
 
-#### Registering a new user
+#### Register a new user
 
 ```
   POST /api/signup
@@ -22,7 +22,7 @@ Request body
 }
 ```
 
-#### Adding new recipe
+#### Add a new recipe
 
 ```
   POST /api/recipe/new
@@ -39,7 +39,7 @@ Request body
 }
 ```
 
-#### Get recipe
+#### Get a recipe
 
 ```
   GET /api/recipe/{id}
@@ -71,7 +71,7 @@ Returns all recipes
 
 Returns recipe with specified category or name.
 
-#### Delete recipe
+#### Delete a recipe
 
 ```
   DELETE /api/recipe/{id}
@@ -82,7 +82,7 @@ Returns recipe with specified category or name.
 
 Deletes recipe with specified id.
 
-#### Update recipe by category or name
+#### Update a recipe by category or name
 
 ```
   PUT /api/recipe/{id}
