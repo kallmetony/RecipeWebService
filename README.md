@@ -104,3 +104,31 @@ Request body
 ```
 
 Updates recipe with specified id.
+
+## Compile
+
+1. Navigate to the project directory
+```bash
+    cd <project-name>
+```
+
+2. Execute maven tasks
+```bash
+    ./mvnw clean package
+```
+
+3. Jar file wil be located in the /target folder
+
+## Run
+
+1. Go to the project directory
+
+```bash
+  cd /target
+```
+
+2. Start the application
+
+```bash
+  java -jar RecipeWebService-1.1.jar
+```
